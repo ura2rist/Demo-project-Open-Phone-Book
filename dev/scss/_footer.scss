@@ -1,0 +1,12 @@
+footer{
+	background: linear-gradient(180deg, #4E6399 21.43%, rgba(78, 99, 153, 0) 100%), #3E4B7A;
+	display: flex !important;
+	justify-content: center;
+	color: white;
+	font-weight: 400;
+
+	p {
+		margin: 0 25px;
+		padding: 36px 0;
+	}
+}

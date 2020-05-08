@@ -1,0 +1,27 @@
+.table-main{
+	background: $mainBg;
+    border: $borderMain;
+    box-sizing: border-box;
+    box-shadow: $shadowMain;
+    border-radius: $bradiusMain;
+    margin: $marginMain;
+    display: none;
+    @media screen and (max-width: 1199px){
+		margin: 25px auto;
+	}
+
+    .table-content{
+		padding: 25px;
+
+		td{
+			border: 1px solid black;
+		}
+		th{
+			text-align: center;
+		}
+		table{
+			width: 100%;
+			background: white;
+		}
+	}
+}

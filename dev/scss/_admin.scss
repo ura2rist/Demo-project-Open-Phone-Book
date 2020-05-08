@@ -1,0 +1,27 @@
+.add{
+	display: none;
+
+	form{
+		margin-top: 25px;
+		border-top: 1px solid black;
+		table{
+			margin-top: 50px;
+		}
+	}
+}
+
+.edit{
+	display: none;
+}
+
+.button-edit{
+	button{
+		margin: 0 10px;
+	}
+}
+
+.modal-content{
+	select{
+		margin: 15px 0;
+	}
+}

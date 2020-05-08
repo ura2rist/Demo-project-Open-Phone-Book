@@ -1,0 +1,57 @@
+.header-main{
+	background: $headerBg;
+	align-items: center;
+    display: flex;
+
+
+
+	.search-inp{
+		padding: 5px;
+	    width: 490px;
+	    background: #F9F9F9;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 7px;
+		border: none;
+		margin: 19px 0 19px 25px;
+		@media screen and (max-width: 575px){
+	    	width: 70%;
+    		margin: 19px auto;
+		}
+	}
+	.button-search{
+		span {
+			color: white;
+			background: #8CC3F7;
+			box-shadow: 0px 0px 25px rgba(110, 170, 214, 0.2);
+			border-radius: 7px;
+			padding: 10px 20px;
+			cursor: pointer;
+			margin-left: 30px;
+			@media screen and (max-width: 575px){
+		    	margin-left: 15px;
+			}
+		}
+	}
+    .group-radio{
+		margin-left: 30px;
+		display: flex;
+	    flex-direction: column;
+	    @media screen and (min-width: 576px) and (max-width: 767px){
+	    	padding-right: 20px;
+		}
+		@media screen and (max-width: 575px){
+		    margin-left: 20px;
+		    padding-right: 10px;
+		}
+	
+	    label{
+			margin: 0;
+			display: flex;
+    		align-items: center;
+
+    		input{
+				margin-right: 10px;
+			}
+		}
+	}
+}

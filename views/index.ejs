@@ -1,0 +1,55 @@
+<%- include('header'); %>
+		<section class="container">
+			<div class="row">
+				<aside class="col-xl-2">
+					<div class="logo">
+						<img src="img/logo.png">
+					</div>
+					<div class="left-menu">
+						<nav>
+							<ul>
+								<% left.forEach(function(items){ %>
+								<li data-left="<%= items.id %>" class="mleft"><%= items.name %></li>
+								<% }); %>
+							</ul>
+						</nav>
+					</div>
+				</aside>
+				<main class="col-xl-10">
+					<div class="header-main">
+						<input type="text" name="" placeholder="Search" class="search-inp">
+						<div class="button-search">
+							<span class="fas fa-search"></span>
+						</div>
+						<div class="group-radio">
+							<label><input type="radio" name="srch" value="all" checked>All</label>
+							<label><input type="radio" name="srch" value="in">In</label>
+						</div>
+					</div>
+					<div class="button-main">
+						<div class="main-menu">
+							<nav>
+								<ul>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="table-main">
+						<div class="table-content">
+							<table>
+								<thead>
+									<tr>
+										<th>Должность</th>
+										<th>ФИО</th>
+										<th>Номер телефона</th>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</main>
+			</div>
+		</section>
+<%- include('footer'); %>

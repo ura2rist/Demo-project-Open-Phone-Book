@@ -1,0 +1,15 @@
+$headerBg: linear-gradient(rgb(78, 99, 153) 21.43%, rgba(78, 99, 153, 0)), rgb(62, 75, 122);
+$mainBg: rgb(241, 248, 254);
+$borderMain: 1px solid rgba(128, 183, 234, 0.5);
+$shadowMain: 0px 0px 25px rgba(110, 170, 214, 0.2);
+$bradiusMain: 7px;
+$marginMain: 25px 0 25px 25px;
+
+@import 'header';
+@import 'main';
+@import 'left-menu';
+@import 'main-menu';
+@import 'contacts';
+@import 'footer';
+@import 'login';
+@import 'admin';

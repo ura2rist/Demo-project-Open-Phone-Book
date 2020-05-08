@@ -1,0 +1,44 @@
+.button-main{
+	background: $mainBg;
+	border: $borderMain;
+	box-sizing: border-box;
+	box-shadow: $shadowMain;
+	border-radius: $bradiusMain;
+	margin: $marginMain;
+	display: none;
+	@media screen and (max-width: 1199px){
+		margin: 25px auto;
+	}
+
+	.main-menu{
+		ul{
+			list-style: none;
+			padding: 0;
+			display: flex;
+			margin: 0;
+			flex-wrap: wrap;
+			font-size: 14px;
+			text-transform: uppercase;
+			justify-content: space-around;
+
+			li{
+				min-width: 175px;
+				padding: 10px;
+				text-align: center;
+				background: #FFFFFF;
+				border: 1px solid rgba(146, 203, 255, 0.5);
+				box-sizing: border-box;
+				box-shadow: 0px 0px 25px rgba(110, 170, 214, 0.2);
+				border-radius: 7px;
+				margin: 15px 5px;
+				cursor: pointer;
+			}
+			li:hover{
+				background: #C5E3FF;
+			}
+			.action-m{
+				background: #8CC3F7;
+			}
+		}
+	}
+}

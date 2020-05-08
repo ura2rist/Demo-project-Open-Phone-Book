@@ -1,0 +1,85 @@
+<%- include('../header') %>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+	  	</button>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    	<ul class="navbar-nav mr-auto">
+	      		<li class="nav-item active">
+	        		<a class="nav-link" href="#" id="add">Add</span></a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="#" id="edit">Edit</a>
+	      		</li>
+	    	</ul>
+	  </div>
+	</nav>
+		<main class="container-fluid main-login">
+			<div class="row justify-content-center">
+				<div class="col-6">
+					<section class="add">
+						<form method="POST" action="/panel/add-left">
+							<h3>Add main group button(Left menu)</h3>
+						  	<div class="form-group">
+						    	<label for="left">Name button</label>
+						    	<input type="text" name="mbutton" class="form-control" id="left" aria-describedby="emailHelp" placeholder="Enter name">
+						  	</div>
+						  	<button type="submit" class="btn btn-primary">Add</button>
+						</form>
+						<form method="POST" action="/panel/add-center">
+							<h3>Add second group button(Center menu)</h3>
+						  	<div class="form-group">
+						    	<label for="center">Name button</label>
+						    	<input type="text" name="cbutton" class="form-control" id="center" aria-describedby="emailHelp" placeholder="Enter name">
+						  	</div>
+						  	<button type="submit" class="btn btn-primary">Add</button>
+						</form>
+						<form  method="POST" action="/panel/add-people">
+							<h3>Add contact</h3>
+						  	<div class="form-group">
+						    	<label for="add-func">Function</label>
+						    	<input type="text" name="func" class="form-control" id="add-func" aria-describedby="emailHelp" placeholder="Enter function">
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="add-name">Name</label>
+						    	<input type="text" name="name" class="form-control" id="add-name" aria-describedby="emailHelp" placeholder="Enter name">
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="add-phone">Phone</label>
+						    	<input type="text" name="phone" class="form-control" id="add-phone" aria-describedby="emailHelp" placeholder="Enter phone">
+						  	</div>
+						  	<button type="submit" class="btn btn-primary">Add</button>
+						</form>
+					</section>
+					<section class="edit">
+						<form>
+						  	<div class="form-group">
+						    	<label for="search-user">Search</label>
+						    	<input type="text" name="search" class="form-control" id="search-user" aria-describedby="emailHelp" placeholder="Enter name">
+						  	</div>
+						  	<button type="submit" class="btn btn-primary" id="search-butt-user">Search</button>
+						  	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#assign-all" id="assing-all">Assign all</button>
+						  	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit-butt" id="edit-button">Edit button</button>
+						  	<table class="table table-bordered table-user">
+							  	<thead>
+							    	<tr>
+								      	<th scope="col">id</th>
+								      	<th scope="col">function</th>
+								     	<th scope="col">name</th>
+								      	<th scope="col">phone</th>
+								      	<th scope="col"></th>
+							    	</tr>
+							  	</thead>
+							  	<tbody>
+							  	</tbody>
+							</table>
+						</form>
+					</section>
+				</div>
+			</div>
+		</main>
+<%- include('modals') %>
+	</body>
+	<script type="text/javascript" src="/script/scripts.js"></script>
+</html>

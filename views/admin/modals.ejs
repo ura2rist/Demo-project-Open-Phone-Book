@@ -1,0 +1,138 @@
+							    	<div class="modal fade" id="edit-user" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+											    <div class="modal-header">
+											       	<h5 class="modal-title" id="exampleModalLabel">Edit contact</h5>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          	<span aria-hidden="true">&times;</span>
+											       	 </button>
+											    </div>
+											    <div class="modal-body">
+												    <form>
+												    	<span>ID:</span><span id="edit-id"></span>
+														<div class="form-group">
+															<label for="edit-function">Function</label>
+															<input type="text" name="cbutton" class="form-control" id="edit-function" aria-describedby="emailHelp" placeholder="Enter name">
+														</div>
+														<div class="form-group">
+															<label for="edit-name">Name</label>
+															<input type="text" name="cbutton" class="form-control" id="edit-name" aria-describedby="emailHelp" placeholder="Enter name">
+														</div>
+														<div class="form-group">
+															<label for="edit-phone">Phone</label>
+															<input type="text" name="cbutton" class="form-control" id="edit-phone" aria-describedby="emailHelp" placeholder="Enter name">
+														</div>
+													</form>
+												    <button type="button" class="btn btn-success" id="user-save">save</button>
+												    <button type="button" class="btn btn-danger" id="rem-contact">remove</button>
+											    </div>
+											    <div class="modal-footer">
+											        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											    </div>
+											</div>
+										</div>
+									</div>
+
+									<div class="modal fade" id="li-data" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+											    <div class="modal-header">
+											        <h5 class="modal-title" id="exampleModalLabel">Edit link data</h5>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          	<span aria-hidden="true">&times;</span>
+											       	</button>
+											    </div>
+											    <div class="modal-body">
+											    	<span>ID:</span><span id="data-link-id"></span>
+											      	<h3>link main(Left menu)</h3>
+											      	<select class="form-control form-control-sm link-data">
+													</select>
+													<button type="button" class="btn btn-danger" id="rem-data-link">remove link</button>
+													<hr>
+													<h3>link second(center menu)</h3>
+											      	<select class="form-control form-control-sm link-data-second">
+													</select>
+													<button type="button" class="btn btn-danger" id="link-data-second">remove link</button>
+													<hr>
+													<h3>link main(left) group</h3>
+											      	<select class="form-control form-control-sm  left-for-link">
+													</select>
+													<button type="button" class="btn btn-success" id="link-data-main">link</button>
+													<hr>
+													<h3>link main data group and second button</h3>
+													<h4>Main group</h4>
+											      	<select class="form-control form-control-sm  md-main">
+													</select>
+													<h4>Second group</h4>
+													<select class="form-control form-control-sm  md-second">
+													</select>
+													<button type="button" class="btn btn-success" id="link-dm-second">link</button>
+											      	<div class="modal-footer">
+											        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											      	</div>
+											   	</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="modal fade" id="assign-all" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+											    <div class="modal-header">
+											        <h5 class="modal-title" id="exampleModalLabel">Link button</h5>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          	<span aria-hidden="true">&times;</span>
+											       	</button>
+											    </div>
+											    <div class="modal-body">
+											      	<h3>link</h3>
+											      	<select class="form-control form-control-sm link-button">
+													</select>
+													<button type="button" class="btn btn-danger" id="rem-but-link">remove link</button>
+													<hr>
+													<h3>link main group(left button)</h3>
+											      	<select class="form-control form-control-sm  left-assign-all">
+													</select>
+													<h3>link second group(center button)</h3>
+											      	<select class="form-control form-control-sm  main-assign-all">
+													</select>
+													<button type="button" class="btn btn-success"  id="create-link">link</button>
+											      	<div class="modal-footer">
+											        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											      	</div>
+											   	</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="modal fade" id="edit-butt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+											    <div class="modal-header">
+											        <h5 class="modal-title" id="exampleModalLabel">Link button</h5>
+											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          	<span aria-hidden="true">&times;</span>
+											       	</button>
+											    </div>
+											    <div class="modal-body">
+											      	<h3>Main(left) group</h3>
+											      	<select class="form-control form-control-sm edit-main-button">
+													</select>
+													<div class="input-group input-group-sm mb-3">
+													  	<input type="text" class="form-control" id="edit-main-group" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+													</div>
+													<button type="button" class="btn btn-success"  id="edit-group-main">Edit</button>
+													<h3>Second(center) group</h3>
+											      	<select class="form-control form-control-sm edit-second-button">
+													</select>
+													<div class="input-group input-group-sm mb-3">
+													  	<input type="text" class="form-control" id="edit-sec-group" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+													</div>
+													<button type="button" class="btn btn-success"  id="edit-group-sec">Edit</button>
+											      	<div class="modal-footer">
+											        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											      	</div>
+											   	</div>
+											</div>
+										</div>
+									</div>
